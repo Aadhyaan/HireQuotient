@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .search-container {
+      float: right;
+      margin-top: 20px;
+      margin-right: 20px;
+    }
+
+    .search-input {
+      padding: 5px;
+    }
+
+    .pagination {
+      margin-top: 10px;
+    }
+
+    .pagination button {
+      background-color: #3498db;
+      color: white;
+      padding: 8px 12px;
+      margin-right: 5px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .action-buttons {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 10px;
+    }
+
+    .edit-button, .delete-button {
+      background-color: #e74c3c; /* Red color */
+      color: white;
+      padding: 8px 12px;
+      margin-right: 5px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .edit-button::before {
+      content: "\270E"; /* Unicode for pencil symbol */
+      margin-right: 5px;
+    }
+
+    .delete-button::before {
+      content: "\1F5D1"; /* Unicode for trash bin symbol */
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="search-container">
+    <input type="text" class="search-input" placeholder="Search...">
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Rows will be dynamically added here using JavaScript -->
+    </tbody>
+  </table>
+
+  <div class="pagination">
+    <!-- Pagination buttons will be dynamically added here using JavaScript -->
+  </div>
+
+  <div class="action-buttons">
+    <button class="edit-button">Edit</button>
+    <button class="delete-button">Delete</button>
+  </div>
+
+  <script>
+    // JavaScript code for dynamic data and pagination will be added here
+  </script>
+
+</body>
+</html>
