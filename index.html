@@ -75,7 +75,12 @@
 </head>
 <body>
 
-  <div class="search-container">
+  <!-- Add this HTML code where you want the search bar to appear -->
+<div>
+  <input type="text" id="search-input" placeholder="Search">
+  <button onclick="search()">Search</button>
+</div>
+<div class="search-container">
     <input type="text" class="search-input" placeholder="Search...">
   </div>
 
@@ -101,6 +106,19 @@
     <button class="edit-button">Edit</button>
     <button class="delete-button">Delete</button>
   </div>
+  <!-- Add this HTML code where you want the pagination to appear -->
+<div class="pagination"></div>
+
+  <!-- Update the HTML structure with the following additions -->
+<div class="search-container">
+  <input type="text" class="search-input" placeholder="Search..." oninput="searchUsers(this.value)">
+</div>
+
+<div class="action-buttons">
+  <input type="checkbox" onclick="toggleSelectAllRows()"> Select/Deselect All
+  <button class="delete-button" onclick="deleteSelectedRows()">Delete Selected</button>
+</div>
+
 
   <script>
     // JavaScript code for dynamic data and pagination will be added here
@@ -108,3 +126,4 @@
 
 </body>
 </html>
+
